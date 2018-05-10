@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100vw;
+}
+.tile {
+	margin: 0;
+	padding: 0;
+	border: .1vw solid black;
+	width: 30vw;
+	height: 25vw;
+	position: relative;
+	background-image: url(/background_tile);
+}
+.name_tile {
+	width: 14vw;
+	height: 5vw;
+	font-size: 1.5vw;
+	position: absolute;
+	top: 1vw;
+	left: 1vw;
+	/*display:flex;
+	/*text-align: left;*/
+	/*padding: .5vw;*/
+	background: gray;
+	border: .5vw solid green;
+	/*white-space: pre-wrap;*/
+}
+.text_tile {
+	width: 12vw;
+	height: 14vw;
+	font-size: 1vw;
+	position: absolute;
+	bottom: 1vw;
+	left: 1vw;
+	display:flex;
+	padding: .5vw;
+	background: yellow;
+	border: .5vw solid green;
+	/*white-space: pre-wrap;*/
+}
+.buy_tile {
+	font-size: 2vw;
+	position: absolute;
+	top: 1vw;
+	right: 3vw;
+	display:flex;
+	padding: .5vw;
+	background: yellow;
+	border: .5vw solid green;
+	/*white-space: pre-wrap;*/
+}
+.price_tile {
+	width: 10vw;
+	height: 4vw;
+	font-size: 2vw;
+	position: absolute;
+	bottom: 1vw;
+	right: 1vw;
+	/*display:flex;
+	/*text-align: left;*/
+	/*padding: .5vw;*/
+	background: gray;
+	border: .5vw solid green;
+}
