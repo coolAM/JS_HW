@@ -9,11 +9,12 @@ body {
 .tile {
 	margin: 0;
 	padding: 0;
-	border: .1vw solid black;
+	border: .3vw solid #FF8C00;
 	width: 30vw;
 	height: 25vw;
 	position: relative;
-	background-image: url(/background_tile);
+	background-image: url(bt.jpg);
+	background-size: cover;
 }
 .name_tile {
 	width: 14vw;
@@ -25,8 +26,8 @@ body {
 	/*display:flex;
 	/*text-align: left;*/
 	/*padding: .5vw;*/
-	background: gray;
-	border: .5vw solid green;
+	background: #FFF5EE;
+	border: .5vw solid #FFE4E1;
 	/*white-space: pre-wrap;*/
 }
 .text_tile {
@@ -38,8 +39,8 @@ body {
 	left: 1vw;
 	display:flex;
 	padding: .5vw;
-	background: yellow;
-	border: .5vw solid green;
+	background: #90EE90;
+	border: .5vw solid #FFE4E1;
 	/*white-space: pre-wrap;*/
 }
 .buy_tile {
@@ -49,20 +50,22 @@ body {
 	right: 3vw;
 	display:flex;
 	padding: .5vw;
-	background: yellow;
-	border: .5vw solid green;
+	background:#ADFF2F;
+	border: .5vw solid #FFE4E1;
 	/*white-space: pre-wrap;*/
 }
 .price_tile {
 	width: 10vw;
-	height: 4vw;
+	height: 4.3vw;
 	font-size: 2vw;
 	position: absolute;
 	bottom: 1vw;
 	right: 1vw;
-	/*display:flex;
-	/*text-align: left;*/
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	/*padding: .5vw;*/
-	background: gray;
-	border: .5vw solid green;
+	background: #00FF7F;
+	border: .5vw solid #FFE4E1;
 }
