@@ -14,7 +14,6 @@ header {
 	position: absolute;
 	top: 0;
 	left: 20vw;
-	
 }
 .form_field {
 	margin: 0;
@@ -28,5 +27,13 @@ header {
 	background: #B0E0E6;
 	border: .5vw solid #FFE4E1;
 	align-items: center;
+	width: 50vw;
+}
+.submit_field {
+	font-size: 2vw;
+	background: #B0E0E6;
+	border: .5vw solid #FFE4E1;
+	display:flex;
+	justify-content: flex-end;
 	width: 50vw;
 }
