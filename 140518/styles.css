@@ -1,0 +1,20 @@
+header {
+	margin: 0vw;
+	padding: 0vw;
+	width: 100vw;
+	display: flex;
+}
+.logo_container {
+	margin: 0vw;
+	padding: 0vw;
+	width: 25vw;
+	position: relative;
+	
+}
+.logo_name_and_image {
+	margin: 0vw;
+	padding: 0vw;
+	position: absolute;
+	top: 1vw;
+	left: 7vw;
+}
