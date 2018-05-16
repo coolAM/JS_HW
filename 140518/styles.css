@@ -62,16 +62,75 @@ header {
 	border-top: .1vw solid #d3d4c9;
 }
 .abonements {
-	margin: 0vw;
-	padding: 0vw;
-	display:flex;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+
+	/*background-image: url(bt.jpg);
+	background-size: cover;*/
 }
-.abonements_element_big {
+.abonements_big_elements {
 	display: flex;
 	flex-wrap: wrap;
-	width: 50vw;
+	width: 100vw;
+	
 }
-.abonements_element_small {
+.abonements_big_card {
+	margin: 0;
+	padding: 0;
+	width: 49vw;
+	height: 25vw;
+	position: relative;
+}
+.abonements_big_card_name {
+	width: 14vw;
+	height: 5vw;
+	font-size: 2vw;
+	position: absolute;
+	top: 1vw;
+	left: 1vw;
+	align-items: center;
+}
+.abonements_big_card_text {
+	width: 12vw;
+	height: 14vw;
+	font-size: 1vw;
+	position: absolute;
+	bottom: 1vw;
+	left: 1vw;
+	display:flex;
+	padding: .5vw;
+}
+.abonements_big_card_buy {
+	font-size: 2vw;
+	position: absolute;
+	top: 1vw;
+	right: 3vw;
+	display:flex;
+	padding: .5vw;
+}
+.abonements_big_card_price {
+	width: 10vw;
+	height: 4.3vw;
+	font-size: 2vw;
+	position: absolute;
+	bottom: 1vw;
+	right: 1vw;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.abonements_big_card:nth-of-type(1){
+	background-image: url(kid_back.png);
+	background-size: cover;
+}
+.abonements_big_card:nth-of-type(2){
+	background-image: url(color_ball.png);
+	background-size: cover;
+}
+
+.abonements_small_element {
 	
 }
 
