@@ -1,20 +1,86 @@
+body {
+	margin: 0vw;
+	padding: 0vw;
+	width: 100vw;
+}
+.main_box {
+	margin: 0vw;
+	padding: 0vw;
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+}
 header {
 	margin: 0vw;
 	padding: 0vw;
 	width: 100vw;
 	display: flex;
+	border: .5vw solid #ffffff;
 }
 .logo_container {
 	margin: 0vw;
 	padding: 0vw;
-	width: 25vw;
-	position: relative;
+	width: 40vw;
+	height: auto;
+	align-items: center;
 	
+	/*background-image: url(logo_name&image.png)*/
 }
 .logo_name_and_image {
+	margin-right: -1vw;
+	padding: 0vw;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	
+}
+.bookmarks {
 	margin: 0vw;
 	padding: 0vw;
-	position: absolute;
-	top: 1vw;
-	left: 7vw;
+	display:flex;
+	text-transform: uppercase;
+	
 }
+.bookmarks_element {
+	margin: 0vw;
+	padding: 1vw;
+	font-family: consolas;
+	font-size: 1.5vw;
+	text-align: center;
+	
+}
+.bookmarks_element:hover {
+	border-bottom: .5vw solid #fbcc00;
+}
+.name_abonements {
+	width: 100vw;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: arial narrow;
+	font-size: 2.5vw;
+	background: #f7f5e6;
+	border-top: .1vw solid #d3d4c9;
+}
+.abonements {
+	margin: 0vw;
+	padding: 0vw;
+	display:flex;
+}
+.abonements_element_big {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50vw;
+}
+.abonements_element_small {
+	
+}
+
+
+
+
+
+
+
+
+
+
