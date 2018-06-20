@@ -15,7 +15,6 @@ header {
 	padding: 0vw;
 	width: 100vw;
 	display: flex;
-	border: .5vw solid #ffffff;
 }
 .logo_container {
 	margin: 0vw;
@@ -47,7 +46,7 @@ header {
 	font-family: consolas;
 	font-size: 1.5vw;
 	text-align: center;
-	
+	border: .5vw solid #ffffff;
 }
 .bookmarks_element:hover {
 	border-bottom: .5vw solid #fbcc00;
@@ -84,7 +83,7 @@ header {
 }
 .abonements_big_card_name {
 	width: 14vw;
-	height: 5vw;
+	height: 7vw;
 	font-size: 2vw;
 	position: absolute;
 	top: 1vw;
@@ -138,7 +137,7 @@ header {
 
 
 
-
+с
 
 
 
