@@ -1,0 +1,16 @@
+header {
+    text-align: center;
+    border: 1vw solid black;
+    margin: 2vw;
+}
+.enter_position {
+    text-align: center;
+    margin: 2vw;
+    padding: 0vw;
+}
+.card {
+    margin: 0vw;
+    padding: 0vw;
+    border: 1vw solid green;
+}
+
