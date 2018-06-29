@@ -3,14 +3,14 @@ let employer = {
     surname : 'Pof',
     position : 'director',
     birthday : '1987',
-    getFullName : () => {
-        let fullname = document.querySelector('.name_el_2').value;
-        return fullname = name +" "+ surname;
+    getFullName : function() {
+        let fullname = document.querySelector('.name_el_2').textContent;
+        return fullname = this.name +" "+ this.surname;
     },
-    getAge : () => {
-        let age = document.querySelector('.date_el_2').value;
+    getAge : function() {
+        let age = document.querySelector('.date_el_2').textContent;
         let a = new Date();
-        return age = a-birthday
+        return age = a.getFullYear()-this.birthday
     }
 }
 let employer1 = {
@@ -18,20 +18,31 @@ let employer1 = {
     surname : 'Chuchukovich',
     position : 'slave',
     birthday : '1990',
-    getFullName : () => {
-         return document.querySelector('.name_el_2').value = name +" "+ surname;
+    getFullName : function() {
+        let fullname = document.querySelector('.name_el_2').textContent;
+        return fullname = this.name +" "+ this.surname;
     },
-    getAge : () => {
+    getAge : function() {
+        let age = document.querySelector('.date_el_2').textContent;
         let a = new Date();
-        return document.querySelector('.date_el_2').value = a-document.querySelector('.date_el_2').value;
+        return age = a.getFullYear()-this.birthday
     }
 }
 let btn = document.querySelector('.btn');
 btn.addEventListener('click',() =>{
-    if (document.querySelector('.enter_position').value == 'director'){
-        employer.getFullName;
-        employer.getAge
+    if (document.querySelector('.position').value == 1){
+        document.querySelector('.name_el_2').textContent = employer.getFullName();
+        document.querySelector('.date_el_2').textContent = employer.getAge()
     }
-    employer1.getFullName;
-    employer1.getAge
+    document.querySelector('.name_el_2').textContent = employer1.getFullName();
+    document.querySelector('.date_el_2').textContent = employer1.getAge()
 })
+console.log(document.querySelector('.position').textContent);
+
+
+
+
+
+
+
+
