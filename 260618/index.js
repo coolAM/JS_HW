@@ -30,7 +30,7 @@ let employer1 = {
 }
 let btn = document.querySelector('.btn');
 btn.addEventListener('click',() =>{
-    if (document.querySelector('.position').value == 1){
+    if (document.querySelector('.position').value == 'director'){
         document.querySelector('.name_el_2').textContent = employer.getFullName();
         document.querySelector('.date_el_2').textContent = employer.getAge()
     }
@@ -38,9 +38,6 @@ btn.addEventListener('click',() =>{
     document.querySelector('.date_el_2').textContent = employer1.getAge()
 })
 console.log(document.querySelector('.position').textContent);
-
-
-
 
 
 

@@ -22,6 +22,7 @@ console.log(newCompanyMap);
                                     /*****REDUCE ********/
 let newCompanyReduce = [];
 newCompanyReduce = newCompanyReduce.reduce (function(acc, elem) {
-    return acc.trim(elem.name)
+    console.log(elem.name)
+    return acc.elem.name.trim()
 },0)
 console.log(newCompanyReduce)
