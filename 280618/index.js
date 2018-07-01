@@ -9,20 +9,13 @@ let company = [
         surname : ' Stasovich     '
     }
 ]
-let newCompanyMap = [];
-newCompanyMap = company.map (function(elem)
-     { return {
-        name : elem.name.trim(),
-        surname : elem.surname.trim()
-     }       
-    })  
-console.log(newCompanyMap);
+console.log(company)
 
-
-                                    /*****REDUCE ********/
+let a = company;
 let newCompanyReduce = [];
-newCompanyReduce = newCompanyReduce.reduce (function(acc, elem) {
-    console.log(elem.name)
-    return acc.elem.name.trim()
-},0)
-console.log(newCompanyReduce)
+newCompanyReduce = a.reduce (function(acc, elem) {
+    elem.name = elem.name.trim();
+    elem.surname = elem.surname.trim();
+    return acc
+},a)
+console.log(newCompanyReduce);
