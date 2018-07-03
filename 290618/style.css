@@ -1,0 +1,21 @@
+.active {
+    text-align: center;
+    margin: 0vw;
+    margin-top: 5vw;
+    border: 1vw solid sandybrown;
+    height: auto;
+    width: auto;
+}
+.list {
+    display: flex;
+    justify-content: center;
+    
+}
+.list_element {
+    text-align: center;
+    margin: 0vw;
+    border: 1vw solid brown;
+    width: auto;
+    height: auto;
+    background-size: cover;
+}
