@@ -1,10 +1,18 @@
-.active {
-    text-align: center;
+.main {
     margin: 0vw;
-    margin-top: 5vw;
+    padding: 0vw;
+    width: 90vw;
+    
+}
+.active {
+    display: flex;
+    justify-content: center;
+    padding: 0vw;
+    margin: 0vw;
+    margin-top: 1vw;
     border: 1vw solid sandybrown;
-    height: auto;
-    width: auto;
+    width: 90vw;
+    box-sizing: border-box;
 }
 .list {
     display: flex;
@@ -12,10 +20,12 @@
     
 }
 .list_element {
+    box-sizing: border-box;
     text-align: center;
     margin: 0vw;
-    border: 1vw solid brown;
-    width: auto;
-    height: auto;
+    border: 1vw solid brown; 
+    width: 30vw;
+    max-height: 100%;
+    max-width: 100%;
     background-size: cover;
 }
