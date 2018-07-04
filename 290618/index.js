@@ -11,3 +11,26 @@
 })
 let elementList = document.querySelectorAll("list_element");
 console.log(elementList);*/
+
+document.addEventListener('DOMContentLoaded', function(){
+
+let elementList = document.querySelectorAll('img.list_element_js')
+let default_img = document.querySelector('img.active_js').src;
+console.log(elementList);
+let listImg = function(id, road) {
+    this.id = id;
+    this.road = road;
+    onmouseout = function() {   
+        document.querySelector('img.active_js').src = this.road;
+    }
+    onmouseover = function() {
+        document.querySelector('img.active_js').src = default_img;
+    }
+}
+let arrayImg = []; 
+for (let i = 0; i < elementList.length; i++ ) {
+    arrayImg[i] = new listImg(i, elementList[i].src);
+}
+console.log(arrayImg);
+
+})

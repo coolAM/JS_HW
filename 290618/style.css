@@ -1,7 +1,7 @@
 .main {
     margin: 0vw;
     padding: 0vw;
-    width: 90vw;
+    width: 60vw;
     
 }
 .active {
@@ -11,7 +11,7 @@
     margin: 0vw;
     margin-top: 1vw;
     border: 1vw solid sandybrown;
-    width: 90vw;
+    width: 60vw;
     box-sizing: border-box;
 }
 .list {
@@ -24,8 +24,5 @@
     text-align: center;
     margin: 0vw;
     border: 1vw solid brown; 
-    width: 30vw;
-    max-height: 100%;
-    max-width: 100%;
-    background-size: cover;
+    width: 20vw;
 }
