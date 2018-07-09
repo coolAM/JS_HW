@@ -20,17 +20,18 @@ console.log(elementList);
 let listImg = function(id, road) {
     this.id = id;
     this.road = road;
-    onmouseout = function() {   
-        document.querySelector('img.active_js').src = this.road;
-    }
-    onmouseover = function() {
-        document.querySelector('img.active_js').src = default_img;
-    }
 }
 let arrayImg = []; 
 for (let i = 0; i < elementList.length; i++ ) {
     arrayImg[i] = new listImg(i, elementList[i].src);
+    function on () {   
+        document.querySelector('img.active_js').src = this.road;
+    };
+    function off () {
+        document.querySelector('img.active_js').src = default_img;
+    };
+    elementList[i].addEventListener('onmouseout', on());
+    elementList[i].addEventListener('onmouseover', off());
 }
-console.log(arrayImg);
-
+console.log(document.querySelector('img.active_js').src);
 })
