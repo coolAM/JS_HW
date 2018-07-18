@@ -15,7 +15,7 @@ console.log(elementList);*/
 document.addEventListener('DOMContentLoaded', function(){
 
 let elementList = document.querySelectorAll('img.list_element_js')
-let default_img = document.querySelector('img.active_js').src;
+let default_img = document.querySelector('img.active_js');
 console.log(elementList);
 let listImg = function(id, road) {
     this.id = id;
@@ -24,14 +24,16 @@ let listImg = function(id, road) {
 let arrayImg = []; 
 for (let i = 0; i < elementList.length; i++ ) {
     arrayImg[i] = new listImg(i, elementList[i].src);
-    function on () {   
-        document.querySelector('img.active_js').src = this.road;
+    function on (ev) {   
+        document.querySelector('img.active_js').src = ev.target.road;
+        console.log(document.querySelector(ev.target.road));
     };
-    function off () {
-        document.querySelector('img.active_js').src = default_img;
+    function off (ev) {
+        document.querySelector('img.active_js').src = default_img.src;
     };
-    elementList[i].addEventListener('onmouseout', on());
-    elementList[i].addEventListener('onmouseover', off());
+    elementList[i].addEventListener('mouseout', on);
+    /*elementList[i].addEventListener('mouseover', off);*/
 }
+console.log(arrayImg[0].road);
 console.log(document.querySelector('img.active_js').src);
-})
+})  
